@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700%7CSource+Sans+Pro:300,400,600" rel="stylesheet">
 
     <!-- ==== Font Awesome ==== -->
+    <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     <!-- ==== jQuery UI ==== -->
@@ -28,7 +29,6 @@
     
     <!-- ==== Bootstrap ==== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    
     
     <!-- ==== Owl Carousel Plugin ==== -->
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
@@ -66,7 +66,6 @@
     <!-- <div class="preloader bg--color-theme"></div> -->
     <!-- Preloader End -->
     
-    
     <!-- Wrapper Start -->
     <div class="wrapper">
         <!-- Header Section Start -->
@@ -76,11 +75,8 @@
                 <div class="container">
                     <!-- Header Topbar Links Start -->
                     <ul class="nav links float--left">
-                        <li class="hidden-xxs"><a href="#"><i class="fa fa-question"></i>&nbsp; FAQ</a></li>
-                        <li class="hidden-xxs"><a href="#"><i class="fa fa-support"></i>&nbsp; Support</a></li>
-                        <li class="hidden-xxs"><a href="#"><i class="fa fa-user"></i>&nbsp; Login</a></li>
-                        <li class="show-xxs top-bar-call"><a href="tel:+919039310833"><i class="fa fa-phone"></i>&nbsp; +919039310833</a></li>
-                        <li class="show-xxs"><a href="#"><i class="fa fa-map-marker"></i>&nbsp; <span id="loc">Location</span></a></li>
+                        <li><a href="mailto:connect@kaarigaronline.com"><i class="fa fa-envelope"></i>&nbsp; connect@kaarigaronline.com</a></li>
+                        <li><a href="tel:+919039310833"><i class="fa fa-phone-square"></i>&nbsp; +919039310833</a></li>
                     </ul>
                     <!-- Header Topbar Links End -->
 
@@ -90,143 +86,92 @@
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#">Login</a></li>
                     </ul>
                     <!-- Header Topbar Social End -->
                 </div>
             </div>
             <!-- Header Topbar End -->
 
-            <!-- Header Navbar Top Start -->
-            <div class="header--navbar-top hidden-xxs">
+
+            <!-- Header Navbar Start -->
+            <nav class="header--navbar navbar" data-trigger="sticky">
                 <div class="container">
-                    <!-- Logo Start -->
-                    <div class="logo float--left">
+
+                    <div class="logo">
                         <div class="vc--parent">
                             <div class="vc--child">
-                                <a href="index.html"><img src="assets/images/logo.png" alt="Kaarigar Logo" data-rjs="2"></a>
+                                <a href="#">
+                                    <img src="assets/images/logo.png" alt="Kaarigar Logo" data-rjs="2">
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!-- Logo End -->
 
-                    <div class="float--right">
-                        <!-- Header Navbar Top Info Start -->
-                        <div class="header--navbar-top-info float--left">
-                            <div class="vc--parent">
-                                <div class="vc--child">
-                                    <ul class="nav">
-                                        <li>
-                                            <div class="content">
-                                                <p>
-                                                    <a href="tel:+919039310833" class="h4">
-                                                        <i class="fa fa-phone text--primary"></i> +919039310833
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="content">
-                                                <p> 
-                                                    <a href="tel:+919039310833" class="h4">
-                                                        <i class="fa fa-map-marker text--primary"></i> 
-                                                        Location
-                                                    </a>
-                                                </p>
-                                                <!-- <a href="" style="text-decoration:underline;" class="text--primary">Change location</a> -->
-                                            </div>
-                                        </li>
-                                    </ul>
+                    <div id="headerNav" class="navbar-collapse collapse">
+                        <!-- Header Nav Links Start -->
+                        <ul class="header--nav-links nav navbar-nav font--secondary">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu font--primary">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">How we work</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown megamenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown-menu font--primary clearfix">
+                                    <div class="row reset--gutter">
+                                        <ul class="nav col-md-3 col-sm-6">
+                                            <li><a href="#">AC Repairing</a></li>
+                                            <li><a href="#">Plumbers</a></li>
+                                            <li><a href="#">Electricians</a></li>
+                                            <li><a href="#">Construction</a></li>
+                                            <li><a href="#">Haircut at home</a></li>
+                                        </ul>
+
+                                        <ul class="nav col-md-3 col-sm-6">
+                                            <li><a href="#">Packers & Movers</a></li>
+                                            <li><a href="#">Painters</a></li>
+                                            <li><a href="#">Carpenters</a></li>
+                                            <li><a href="#">Pest control</a></li>
+                                            <li><a href="#">Appliance repair</a></li>
+                                        </ul>
+
+                                        <div class="megamenu-img col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 hidden-xs">
+                                            <img src="assets/images/megamenu-img.jpg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- Header Navbar Top Info End -->
-
-                        <!-- Header Navbar Top Button Start -->
-                        <div class="header--navbar-top-btn float--left">
-                            <div class="vc--parent">
+                            </li>
+                            <li class=""><a href="#">Contact</a></li>
+                            <li class="">
                                 <div class="vc--child">
-                                    <a href="index.html#appointment" class="btn btn-default">Book Service</a>
+                                    <a href="index.html#appointment" class="btn btn-primary">Book Service</a>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- Header Navbar Top Button End -->
+                            </li>
+                        </ul>
+                        <!-- Header Nav Links End -->
+                    </div>
+
+                    
+                    <div class="navbar-header toggler">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
                 </div>
-            </div>
-            <!-- Header Navbar Top End -->
-
-           <!-- Header Navbar Start -->
-           <nav class="header--navbar navbar" data-trigger="sticky">
-            <div class="container">
-
-                <div class="logo float--left show-xxs">
-                    <div class="vc--parent">
-                        <div class="vc--child">
-                            <a href="index.html"><img src="assets/images/logo.png" alt="Kaarigar Logo" data-rjs="2"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="headerNav" class="navbar-collapse collapse float--left">
-                    <!-- Header Nav Links Start -->
-                    <ul class="header--nav-links nav navbar-nav font--secondary">
-                        <li class="header-svc">
-                            <a href="index.html">
-                                <img src="assets/images/services-img/saw-up.png" alt="Carpenter" class="sv-img">
-                                &nbsp;
-                                <span>Carpenters</span>
-                            </a>
-                        </li>
-                        <li class="header-svc">
-                            <a href="index.html">
-                                <img src="assets/images/services-img/air-conditioner.png" class="sv-img">
-                                &nbsp;
-                                <span>AC repair</span>
-                            </a>
-                        </li>
-                        <li class="header-svc">
-                            <a href="index.html">
-                                <img src="assets/images/services-img/electricity.png" alt="Carpenter" class="sv-img">
-                                &nbsp;
-                                <span>Electrician</span>
-                            </a>
-                        </li>
-                        <li class="header-svc">
-                            <a href="index.html">
-                                <img src="assets/images/services-img/wrench.png" alt="Carpenter" class="sv-img">
-                                &nbsp;
-                                <span>Plumber</span>
-                            </a>
-                        </li>
-                        <li class="header-svc">
-                            <a href="index.html">
-                                <img src="assets/images/services-img/brush.png" alt="Carpenter" class="sv-img">
-                                &nbsp;
-                                <span>Painter</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Header Nav Links End -->
-                </div>
-                
-                <div class="navbar-header toggler show-xxs">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-            
-            </div>
-        </nav>
-        <!-- Header Navbar End -->
+            </nav>
+            <!-- Header Navbar End -->
         </header>
         <!-- Header Section End -->
 
-       <!-- Banner Section Start -->
-       <div id="banner" class="banner--section pd--80-0">
+        <!-- Banner Section Start -->
+        <div id="banner" class="banner--section pd--80-0">
             <!-- Banner Slider Start -->
             <div class="banner--slider owl-carousel" data-owl-dots="true">
                 <!-- Banner Item Start -->
@@ -237,7 +182,7 @@
                                 <div class="row">
                                     <!-- Banner Content Start -->
                                     <div class="banner--content col-md-8">
-                                        <h1>Now find <span>Carpenters</span> online</h1>
+                                        <h1>Now find <strong>Carpenters</strong> online</h1>
             
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             
@@ -259,7 +204,7 @@
                                 <div class="row">
                                     <!-- Banner Content Start -->
                                     <div class="banner--content col-md-8">
-                                        <h1>Now find <span>Painters</span> online</h1>
+                                        <h1>Now find <strong>Painters</strong> online</h1>
             
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             
@@ -281,7 +226,7 @@
                                 <div class="row">
                                     <!-- Banner Content Start -->
                                     <div class="banner--content col-md-8">
-                                        <h1>Now find <span>Packers & movers</span> online</h1>
+                                        <h1>Now find <strong>Packers & movers</strong> online</h1>
             
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             
@@ -303,7 +248,7 @@
                                 <div class="row">
                                     <!-- Banner Content Start -->
                                     <div class="banner--content col-md-8">
-                                        <h1>...and many more <span>Professional Kaarigar</span> online</h1>
+                                        <h1>...and many more <strong>Professional Kaarigar</strong> online</h1>
             
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             
@@ -321,9 +266,9 @@
 
             <!-- Banner From Start -->
             <div class="banner--form" data-form="ajax">
-                <div class="containers">
+                <div class="container">
                     <div class="row">
-                        <div class="">
+                        <div class="col-md-4 col-md-offset-8">
                             <form action="sendmail.php" method="post">
                                 <h2 class="h4">Register to book your service</h2>
                                 
@@ -372,40 +317,99 @@
         <!-- Appointment Section Start -->
         <div id="appointment" class="appointment--section pd--100-0-40">
             <div class="container">
-                <div class="services">
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/saw-up.png" alt="Carpenter" class="sv-img">
-                        <h4>Carpenters</h4>
-                    </a>
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/air-conditioner.png" alt="AC Repair" class="sv-img">
-                        <h4>AC Repair</h4>
-                    </a>
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/electricity.png" alt="Electrician" class="sv-img">
-                        <h4>Electrician</h4>
-                    </a>
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/wrench.png" alt="Plumber" class="sv-img">
-                        <h4>Plumber</h4>
-                    </a>
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/brush.png" alt="Painter" class="sv-img">
-                        <h4>Painter</h4>
-                    </a>
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/car-repair.png" alt="Car repair" class="sv-img">
-                        <h4>Car Repair</h4>
-                    </a>
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/handyman.png" alt="handyman" class="sv-img">
-                        <h4>Handyman</h4>
-                    </a>
+                <div class="row">
+                    <!-- Appointment Form Start -->
+                    <div class="col-md-4 logo-man">
+                        <img src="assets/images/logo-man.png" alt="kaarigar">
+                    </div>
+                    <!-- Appointment Form End -->
+
+                    <!-- Appointment Items Start -->
+                    <div class="appointment--items col-md-8">
+                        <div class="row AdjustRow">
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 01</span>
+
+                                    <div class="icon text--primary text-right">
+                                        <img src="assets/images/appointment-img/icon-01.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Select location</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 02</span>
+
+                                    <div class="icon text--primary text-right">
+                                        <img src="assets/images/appointment-img/icon-02.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Book Service</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 03</span>
+
+                                    <div class="icon text--primary text-right">
+                                        <img src="assets/images/appointment-img/icon-03.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Get service</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 04</span>
+
+                                    <div class="icon text--primary text-right">
+                                        <img src="assets/images/appointment-img/icon-04.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Pay</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointment Items End -->
                 </div>
-                <div class="section--footer text-center">
-                    <a href="services.html" class="btn btn-default">View All Services</a>
-                </div>
-                <!-- Section Footer End -->
             </div>
         </div>
         <!-- Appointment Section End -->
@@ -415,9 +419,9 @@
             <div class="container">
                 <!-- Section Title Start -->
                 <div class="section--title">
-                    <h2 class="h2">How it works ?</h2>
+                    <h2 class="h2">Our Services</h2>
 
-                    <p>Follow these steps to book your service</p>
+                    <p>What We Do</p>
                 </div>
                 <!-- Section Title End -->
 
@@ -463,11 +467,12 @@
                             <div class="dot" data-position-top="16px" data-position-right="-129px"></div>
 
                             <h3 class="h3">
-                                <a href="#" data-toggle="tab" data-target="#serviceImg01">Step 01</a>
+                                <a href="#" data-toggle="tab" data-target="#serviceImg01">Electrician</a>
                             </h3>
 
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
+                            <a href="#" class="btn btn-default">View Details</a>
                         </div>
                         <!-- Service Item End -->
 
@@ -476,11 +481,12 @@
                             <div class="dot" data-position-top="13px" data-position-right="-54px"></div>
 
                             <h3 class="h3">
-                                <a href="#" data-toggle="tab" data-target="#serviceImg02">Step 03</a>
+                                <a href="#" data-toggle="tab" data-target="#serviceImg02">Car Repair</a>
                             </h3>
 
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
+                            <a href="#" class="btn btn-default">View Details</a>
                         </div>
                         <!-- Service Item End -->
                     </div>
@@ -493,11 +499,12 @@
                             <div class="dot" data-position-top="16px" data-position-left="-129px"></div>
 
                             <h3 class="h3">
-                                <a href="#" data-toggle="tab" data-target="#serviceImg03">Step 02</a>
+                                <a href="#" data-toggle="tab" data-target="#serviceImg03">AC Service</a>
                             </h3>
 
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
+                            <a href="#" class="btn btn-default">View Details</a>
                         </div>
                         <!-- Service Item End -->
                         
@@ -506,17 +513,23 @@
                             <div class="dot" data-position-top="13px" data-position-left="-54px"></div>
 
                             <h3 class="h3">
-                                <a href="#" data-toggle="tab" data-target="#serviceImg04">Step 04</a>
+                                <a href="#" data-toggle="tab" data-target="#serviceImg04">Haircut at home</a>
                             </h3>
 
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
+                            <a href="#" class="btn btn-default">View Details</a>
                         </div>
                         <!-- Service Item End -->
                     </div>
                     <!-- Service Items End -->
                 </div>
 
+                <!-- Section Footer Start -->
+                <div class="section--footer text-center">
+                    <a href="#" class="btn btn-default">View All Services</a>
+                </div>
+                <!-- Section Footer End -->
             </div>
         </div>
         <!-- Services Section End -->
@@ -726,216 +739,243 @@
         <!-- Counter Section End -->
 
         <!-- Gallery Section Start -->
-            <!-- <div class="gallery--section pd--100-0">
-                <div class="container">
-                    <div class="section--title">
-                        <h2 class="h2">Projects From Gallery</h2>
+        <div class="gallery--section pd--100-0">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title">
+                    <h2 class="h2">Projects From Gallery</h2>
 
-                        <p>Checkout Our Portfolio</p>
-                    </div>
-
-                    <div class="gallery--filter-nav font--secondary text-center">
-                        <ul class="nav">
-                            <li class="active" data-target="*">All Items</li>
-                            <li data-target="computer">Computer</li>
-                            <li data-target="laptop">Laptop</li>
-                            <li data-target="tablet">Tablet</li>
-                            <li data-target="mobile">Mobile</li>
-                            <li data-target="other">Others Servecies</li>
-                        </ul>
-                    </div>
-
-                    <div class="gallery--items row">
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile laptop">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-01.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Hard Disk Servecing</h3>
-
-                                            <p>Catagory : Computer Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-01.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other tablet">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-02.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Laptop Servecing</h3>
-
-                                            <p>Catagory : Laptop Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-02.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer mobile">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-03.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Tablet Servecing</h3>
-
-                                            <p>Catagory : Tablet Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-03.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="mobile laptop other">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-04.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Mobile Servecing</h3>
-
-                                            <p>Catagory : Mobile Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-04.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="other tablet">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-05.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Laptop Servecing</h3>
-
-                                            <p>Catagory : Laptop Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-05.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-06.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Other Servecing</h3>
-
-                                            <p>Catagory : Other Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-06.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-07.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Motherboard Servecing</h3>
-
-                                            <p>Catagory : Computer Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-07.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer">
-                            <div class="gallery--img">
-                                <img src="img/gallery-img/gallery-item-08.jpg" alt="" data-rjs="2">
-
-                                <div class="gallery--info bg--overlay">
-                                    <div class="vc--parent">
-                                        <div class="vc--child">
-                                            <h3 class="h4">Other Servecing</h3>
-
-                                            <p>Catagory : Other Repair</p>
-
-                                            <div class="btn-groups">
-                                                <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
-                                                <a href="img/gallery-img/gallery-item-08.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section--footer text-center mt--30">
-                        <a href="gallery.html" class="btn btn-default">See More<i class="fa flm fa-angle-double-right"></i></a>
-                    </div>
+                    <p>Checkout Our Portfolio</p>
                 </div>
-            </div> -->
+                <!-- Section Title End -->
+
+                <!-- Gallery Filter Nav Start -->
+                <div class="gallery--filter-nav font--secondary text-center">
+                    <ul class="nav">
+                        <li class="active" data-target="*">All Items</li>
+                        <li data-target="computer">Computer</li>
+                        <li data-target="laptop">Laptop</li>
+                        <li data-target="tablet">Tablet</li>
+                        <li data-target="mobile">Mobile</li>
+                        <li data-target="other">Others Servecies</li>
+                    </ul>
+                </div>
+                <!-- Gallery Filter Nav End -->
+
+                <!-- Gallery Items Start -->
+                <div class="gallery--items row">
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile laptop">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-01.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Hard Disk Servecing</h3>
+
+                                        <p>Catagory : Computer Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-01.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other tablet">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-02.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Laptop Servecing</h3>
+
+                                        <p>Catagory : Laptop Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-02.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer mobile">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-03.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Tablet Servecing</h3>
+
+                                        <p>Catagory : Tablet Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-03.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="mobile laptop other">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-04.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Mobile Servecing</h3>
+
+                                        <p>Catagory : Mobile Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-04.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="other tablet">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-05.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Laptop Servecing</h3>
+
+                                        <p>Catagory : Laptop Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-05.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-06.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Other Servecing</h3>
+
+                                        <p>Catagory : Other Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-06.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-07.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Motherboard Servecing</h3>
+
+                                        <p>Catagory : Computer Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-07.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer">
+                        <div class="gallery--img">
+                            <img src="assets/images/gallery-img/gallery-item-08.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Other Servecing</h3>
+
+                                        <p>Catagory : Other Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="assets/images/gallery-img/gallery-item-08.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+                </div>
+                <!-- Gallery Items End -->
+
+                <!-- Section Footer Start -->
+                <div class="section--footer text-center mt--30">
+                    <a href="#" class="btn btn-default">See More<i class="fa flm fa-angle-double-right"></i></a>
+                </div>
+                <!-- Section Footer End -->
+            </div>
+        </div>
         <!-- Gallery Section End -->
 
         <!-- Pricing Section Start -->
-            <!-- <div class="pricing--section pd--100-0-40 bg--color-lightgray">
+        <div class="pricing--section pd--100-0-40 bg--color-lightgray">
             <div class="container">
+                <!-- Section Title Start -->
                 <div class="section--title">
                     <h2 class="h2">Our Pricing Package</h2>
 
                     <p>Here Is Our Pricing Plan</p>
                 </div>
+                <!-- Section Title End -->
 
                 <div class="row AdjustRow">
                     <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
                         <div class="pricing--item">
                             <div class="pricing--icon">
-                                <img src="img/pricing-img/icon-01.png" alt="" data-rjs="2">
+                                <img src="assets/images/pricing-img/icon-01.png" alt="" data-rjs="2">
                             </div>
 
                             <div class="pricing--title">
@@ -958,15 +998,17 @@
                             </div>
 
                             <div class="pricing--footer">
-                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                                <a href="#" class="btn btn-default">Get Started</a>
                             </div>
                         </div>
+                        <!-- Pricing Item End -->
                     </div>
 
                     <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
                         <div class="pricing--item">
                             <div class="pricing--icon">
-                                <img src="img/pricing-img/icon-02.png" alt="" data-rjs="2">
+                                <img src="assets/images/pricing-img/icon-02.png" alt="" data-rjs="2">
                             </div>
 
                             <div class="pricing--title">
@@ -989,15 +1031,17 @@
                             </div>
 
                             <div class="pricing--footer">
-                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                                <a href="#" class="btn btn-default">Get Started</a>
                             </div>
                         </div>
+                        <!-- Pricing Item End -->
                     </div>
 
                     <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
                         <div class="pricing--item active">
                             <div class="pricing--icon">
-                                <img src="img/pricing-img/icon-03.png" alt="" data-rjs="2">
+                                <img src="assets/images/pricing-img/icon-03.png" alt="" data-rjs="2">
                             </div>
 
                             <div class="pricing--title">
@@ -1020,15 +1064,17 @@
                             </div>
 
                             <div class="pricing--footer">
-                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                                <a href="#" class="btn btn-default">Get Started</a>
                             </div>
                         </div>
+                        <!-- Pricing Item End -->
                     </div>
 
                     <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
                         <div class="pricing--item">
                             <div class="pricing--icon">
-                                <img src="img/pricing-img/icon-04.png" alt="" data-rjs="2">
+                                <img src="assets/images/pricing-img/icon-04.png" alt="" data-rjs="2">
                             </div>
 
                             <div class="pricing--title">
@@ -1051,41 +1097,15 @@
                             </div>
 
                             <div class="pricing--footer">
-                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                                <a href="#" class="btn btn-default">Get Started</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Pricing Section End -->
-
-
-        <!-- Call To Action Section Start -->
-        <div class="cta--section bg--color-darkgray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <!-- Call To Action Content Start -->
-                        <div class="cta--content">
-                            <h2 class="h3">Looking For A Fast &amp; Reliable Repair Service</h2>
-
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                        </div>
-                        <!-- Call To Action Content Start -->
-                    </div>
-
-                    <div class="col-md-3">
-                        <!-- Call To Action Button Start -->
-                        <div class="cta--btn">
-                            <a href="index.html#banner" class="btn btn-default">Book service now</a>
-                        </div>
-                        <!-- Call To Action Button Start -->
+                        <!-- Pricing Item End -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Call To Action Section End -->
+        <!-- Pricing Section End -->
 
         <!-- Testimonial Section Start -->
         <div class="testimonial--section pd--100-0" data-bg-img="assets/images/testimonial-img/bg.jpg">
@@ -1230,8 +1250,34 @@
         <!-- Testimonial Section End -->
 
 
-         <!-- Footer Section Start -->
-         <div class="footer--section bg--color-dark">
+        <!-- Call To Action Section Start -->
+        <div class="cta--section bg--color-darkgray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- Call To Action Content Start -->
+                        <div class="cta--content">
+                            <h2 class="h3">Looking For A Fast &amp; Reliable Repair Service</h2>
+
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <!-- Call To Action Content Start -->
+                    </div>
+
+                    <div class="col-md-3">
+                        <!-- Call To Action Button Start -->
+                        <div class="cta--btn">
+                            <a href="index.html#banner" class="btn btn-default">Book service now</a>
+                        </div>
+                        <!-- Call To Action Button Start -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action Section End -->
+
+        <!-- Footer Section Start -->
+        <div class="footer--section bg--color-dark">
             <div class="footer--copyright-border"></div>
 
             <div class="container bg--overlay">
