@@ -76,7 +76,7 @@ header{
 }
 
 #appointment {
-    padding-top: 40px !important;
+    padding-top: 100px !important;
 }
 #appointment .services{
     display: flex;
@@ -93,7 +93,7 @@ header{
     padding: 20px 25px 30px;
 }
 #appointment .services .service:hover{
-    background: #eee;
+    background: #eeeeee;
 }
 #appointment .services .service h4{
     line-height: initial;
@@ -101,7 +101,74 @@ header{
     margin:0;
     margin-top: 10px;
 }
-
+label.error{
+    margin-top: 10px;
+    background-color: rgb(255, 245, 245);
+    color: rgb(255, 44, 44);
+    padding: 1px 5px;
+}
+section.login, section.register{
+    padding: 40px 0;
+    background-color: #eee;
+}
+.login-form{
+    width: 350px;
+    margin: 0 auto;
+    min-height: 300px;
+    padding: 30px;
+    background-color: white;
+}
+.reg-form{
+    width: 380px;
+    margin: 0 auto;
+    min-height: 300px;
+    padding: 30px;
+    background-color: white;
+}
+.map-iframe{
+    width: 100%;
+    min-height: 260px !important;
+}
+.area-select-row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: #0F76B7;
+    padding: 15px 0;
+}
+.extra-services--section{
+    padding: 40px 0;
+}
+.area-select-row select{
+    width: 100%;
+}
+.area-select-row .area-select-btn {
+    border-color: white;
+    color: white;
+}
+.area-select-row .area-select-btn:hover {
+    background-color: white;
+    color: #0F76B7;
+}
+.d-flex{
+    display: flex;
+}
+.font-16{
+    font-size: 16px;
+}
+.service-select li{
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+.service-select li i{
+    border: none !important;
+    top: 4px !important;
+    left: 5px !important;
+}
+/* .service-select li.btn-warning{
+    background-color:#337ab7 ;
+} */
 
 
 @media(max-width:992px){
@@ -115,7 +182,11 @@ header{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .footer--widget:first-child .h4, .footer--widget:first-child ul li a{
+        margin-left: 0 !important;
+    }
 }
+
 @media(max-width:920px){
     .header--navbar.navbar .container #headerNav > ul > li > a{
         padding: 10px 15px;
@@ -133,7 +204,9 @@ header{
         display: initial !important;
     }
 }
+
 @media(max-width:480px){
+    
     .header--navbar-top .container .logo{
         float: left ;
     }

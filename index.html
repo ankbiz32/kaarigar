@@ -29,7 +29,6 @@
     <!-- ==== Bootstrap ==== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     
-    
     <!-- ==== Owl Carousel Plugin ==== -->
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     
@@ -41,6 +40,12 @@
     
     <!-- ==== jQuery Magnific Popup Plugin ==== -->
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+    <!-- ==== jQuery nice select Plugin ==== -->
+    <link href="assets/css/nice-select.css" rel="stylesheet">
+
+    <!-- ==== Checkbox Plugin ==== -->
+    <link href="assets/css/simsCheckbox.css" rel="stylesheet">
     
     <!-- ==== Main Stylesheet ==== -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -78,9 +83,10 @@
                     <ul class="nav links float--left">
                         <li class="hidden-xxs"><a href="#"><i class="fa fa-question"></i>&nbsp; FAQ</a></li>
                         <li class="hidden-xxs"><a href="#"><i class="fa fa-support"></i>&nbsp; Support</a></li>
-                        <li class="hidden-xxs"><a href="#"><i class="fa fa-user"></i>&nbsp; Login</a></li>
+                        <li class="hidden-xxs"><a href="login.html"><i class="fa fa-user"></i>&nbsp; Login</a></li>
                         <li class="show-xxs top-bar-call"><a href="tel:+919039310833"><i class="fa fa-phone"></i>&nbsp; +919039310833</a></li>
                         <li class="show-xxs"><a href="#"><i class="fa fa-map-marker"></i>&nbsp; <span id="loc">Location</span></a></li>
+                        <!-- <li class="show-xxs"><a href=""><i class="fa fa-user"></i>&nbsp; Login</a></li> -->
                     </ul>
                     <!-- Header Topbar Links End -->
 
@@ -127,7 +133,7 @@
                                         <li>
                                             <div class="content">
                                                 <p> 
-                                                    <a href="tel:+919039310833" class="h4">
+                                                    <a href="" class="h4">
                                                         <i class="fa fa-map-marker text--primary"></i> 
                                                         Location
                                                     </a>
@@ -145,7 +151,7 @@
                         <div class="header--navbar-top-btn float--left">
                             <div class="vc--parent">
                                 <div class="vc--child">
-                                    <a href="index.html#appointment" class="btn btn-default">Book Service</a>
+                                    <a href="#appointment" class="btn btn-default">Book Service</a>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +198,7 @@
                             </a>
                         </li>
                         <li class="header-svc">
-                            <a href="index.html">
+                            <a href="service-details.html">
                                 <img src="assets/images/services-img/wrench.png" alt="Carpenter" class="sv-img">
                                 &nbsp;
                                 <span>Plumber</span>
@@ -372,7 +378,14 @@
         <!-- Appointment Section Start -->
         <div id="appointment" class="appointment--section pd--100-0-40">
             <div class="container">
+                <div class="section--title mb--3">
+                    <h2 class="h2">Which service do you need?</h2>
+                </div>
                 <div class="services">
+                    <a href="service-details.html" class="service">
+                        <img src="assets/images/services-img/wrench.png" alt="Plumber" class="sv-img">
+                        <h4>Plumber</h4>
+                    </a>
                     <a href="" class="service">
                         <img src="assets/images/services-img/saw-up.png" alt="Carpenter" class="sv-img">
                         <h4>Carpenters</h4>
@@ -384,10 +397,6 @@
                     <a href="" class="service">
                         <img src="assets/images/services-img/electricity.png" alt="Electrician" class="sv-img">
                         <h4>Electrician</h4>
-                    </a>
-                    <a href="" class="service">
-                        <img src="assets/images/services-img/wrench.png" alt="Plumber" class="sv-img">
-                        <h4>Plumber</h4>
                     </a>
                     <a href="" class="service">
                         <img src="assets/images/services-img/brush.png" alt="Painter" class="sv-img">
@@ -1301,7 +1310,7 @@
                                 <div class="links--widget">
                                     <ul class="nav">
                                         <li><a href="#"><i class="fa fa-link"></i>New registration</a></li>
-                                        <li><a href="#"><i class="fa fa-link"></i>Contact us</a></li>
+                                        <li><a href="contact.html"><i class="fa fa-link"></i>Contact us</a></li>
                                         <li><a href="#"><i class="fa fa-link"></i>FAQ</a></li>
                                         <li><a href="#"><i class="fa fa-link"></i>Terms & conditions</a></li>
                                         <li><a href="#"><i class="fa fa-link"></i>Privacy Pilicy</a></li>
@@ -1400,6 +1409,9 @@
     <!-- ==== jQuery Validation Plugin ==== -->
     <script src="assets/js/jquery.validate.min.js"></script>
 
+    <!-- ==== jQuery nice select Plugin ==== -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+
     <!-- ==== jQuery Form Plugin ==== -->
     <script src="assets/js/jquery.form.min.js"></script>
 
@@ -1412,7 +1424,27 @@
     <!-- ==== RetinaJS Plugin ==== -->
     <script src="assets/js/retina.min.js"></script>
 
+    <!-- ==== chechbox Plugin ==== -->
+    <script src="assets/js/simsCheckbox.js"></script>
+    
     <!-- ==== Main JavaScript ==== -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: 620
+                }, 300, function(){
+                    window.location.hash = hash;
+                });
+                } 
+            });
+        });
+    </script>
+
 </body>
 </html>
