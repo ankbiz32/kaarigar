@@ -153,6 +153,9 @@ section.login, section.register{
 .d-flex{
     display: flex;
 }
+.justify-content-between{
+    justify-content: space-between;
+}
 .d-block{
     display: block;
 }
@@ -178,7 +181,14 @@ section.login, section.register{
 .footer-nav{
     display: none !important;
 }
-
+#loc-modal .modal-dialog{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.profile-sidebar{
+    float: left !important;
+}
 
 @media(max-width:992px){
     #appointment{
@@ -194,6 +204,10 @@ section.login, section.register{
     .footer--widget:first-child .h4, .footer--widget:first-child ul li a{
         margin-left: 0 !important;
     }
+    .profile-sidebar{
+        float: none !important;
+    }
+    
 }
 
 @media(max-width:920px){
@@ -285,5 +299,12 @@ section.login, section.register{
     }
     .footer-nav a{
         flex: 1 !important;
+    }
+    #loc-modal .d-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #loc-modal .d-flex .btn{
+        margin-top: 20px;
     }
 }

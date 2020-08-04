@@ -85,7 +85,7 @@
                         <li class="hidden-xxs"><a href="#"><i class="fa fa-support"></i>&nbsp; Support</a></li>
                         <li class="hidden-xxs"><a href="login.html"><i class="fa fa-user"></i>&nbsp; Login</a></li>
                         <li class="show-xxs top-bar-call"><a href="tel:+919039310833"><i class="fa fa-phone"></i>&nbsp; +919039310833</a></li>
-                        <li class="loc-top-bar show-xxs"><a href="#"><i class="fa fa-map-marker"></i>&nbsp; <span id="loc">Location</span></a></li>
+                        <li class="loc-top-bar show-xxs"><a href="#" data-toggle="modal" data-target="#loc-modal"><i class="fa fa-map-marker"></i>&nbsp; <span id="loc">Location</span></a></li>
                         <li class="login-top-bar show-xxs"><a href="login.html"><i class="fa fa-user"></i>&nbsp; Login</a></li>
                     </ul>
                     <!-- Header Topbar Links End -->
@@ -133,7 +133,7 @@
                                         <li>
                                             <div class="content">
                                                 <p> 
-                                                    <a href="" class="h4">
+                                                    <a href="" class="h4" data-toggle="modal" data-target="#loc-modal">
                                                         <i class="fa fa-map-marker text--primary"></i> 
                                                         Location
                                                     </a>
@@ -177,7 +177,7 @@
                     <!-- Header Nav Links Start -->
                     <ul class="header--nav-links nav navbar-nav font--secondary">
                         <li class="header-svc footer-nav bg--color-lightgray d-xxs-flex mb--1">
-                            <a href="index.html" class="font-14" style="white-space: nowrap;">About us</a>
+                            <a href="about.html" class="font-14" style="white-space: nowrap;">About us</a>
                             <a href="contact.html" class="font-14">Contact</a>
                             <a href="index.html" class="font-14">T&C</a>
                         </li>
@@ -1275,7 +1275,7 @@
                             </div>
 
                             <div class="link">
-                                <a href="#">Read More<i class="fa flm fa-angle-double-right"></i></a>
+                                <a href="about.html">Read More<i class="fa flm fa-angle-double-right"></i></a>
                             </div>
 
                             <div class="info">
@@ -1394,6 +1394,34 @@
     </div>
     <!-- Wrapper End -->
 
+
+    <div class="modal fade" id="loc-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header pt--2">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" ><i class="fa fa-map-marker"></i>&nbsp; Select your location</h4>
+              </div>
+            <div class="modal-body">
+                <form action="" method="GET">
+                    <div class="d-flex">
+                        <select name="location" class="wide" id="area-select" required>
+                            <option value="">-- Select your location --</option>
+                            <option value="raipur">Raipur, C.G.</option>
+                            <option value="abhanpur">Abhanpur, C.G.</option>
+                        </select>
+                        <button type="submit" class="btn btn-default area-select-btn ml--2">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
     <!-- ==== jQuery Library ==== -->
     <script src="assets/js/jquery.min.js"></script>
 
@@ -1450,6 +1478,7 @@
 
     <script>
         $(document).ready(function(){
+
             $("a").on('click', function(event) {
                 if (this.hash !== "") {
                 event.preventDefault();
@@ -1461,6 +1490,9 @@
                 });
                 } 
             });
+
+            $("#area-select").niceSelect();
+
         });
     </script>
 
