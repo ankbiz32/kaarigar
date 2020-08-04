@@ -153,8 +153,14 @@ section.login, section.register{
 .d-flex{
     display: flex;
 }
+.d-block{
+    display: block;
+}
 .font-16{
     font-size: 16px;
+}
+.font-14{
+    font-size: 14px !important;
 }
 .service-select li{
     border: none;
@@ -169,6 +175,9 @@ section.login, section.register{
 /* .service-select li.btn-warning{
     background-color:#337ab7 ;
 } */
+.footer-nav{
+    display: none !important;
+}
 
 
 @media(max-width:992px){
@@ -225,7 +234,6 @@ section.login, section.register{
         display: initial !important;
     }
     .header--topbar .container ul.float--left{
-        text-align: center;
         float: none;
         margin: 0 auto;
     }
@@ -248,14 +256,10 @@ section.login, section.register{
     li.show-xxs::before{
         content: '' !important;
     }
-    li.top-bar-call{
-        margin-right: auto !important;
-    }
     .header--topbar ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* text-align: center !important; */
     }
     .banner--form{
         top: 65%;
@@ -271,5 +275,15 @@ section.login, section.register{
     }
     #appointment .services .service{
         flex-basis: 50%;
+    }
+    .d-xxs-block{
+        display: block !important;
+    }
+    .d-xxs-flex{
+        display: flex !important;
+        justify-content: center;
+    }
+    .footer-nav a{
+        flex: 1 !important;
     }
 }
